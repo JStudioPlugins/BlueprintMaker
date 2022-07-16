@@ -20,7 +20,8 @@ namespace BlueprintMaker
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Manager.ItemName = textBox1.Text;
+            string fix = textBox1.Text.Replace(" ", "_");
+            Manager.ItemName = fix;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -232,9 +233,20 @@ namespace BlueprintMaker
             Manager.SupplyAmount[5] = (ushort)numericUpDown19.Value;
         }
 
+        private void numericUpDown20_ValueChanged(object sender, EventArgs e)
+        {
+            Manager.SupplyID[6] = (ushort)numericUpDown20.Value;
+        }
+
+        private void numericUpDown21_ValueChanged(object sender, EventArgs e)
+        {
+            Manager.SupplyAmount[6] = (ushort)numericUpDown21.Value;
+        }
+
         private void CopyValues()
         {
-            Manager.ItemName = textBox1.Text;
+            string fix = textBox1.Text.Replace(" ", "_");
+            Manager.ItemName = fix;
             if (checkedListBox1.GetItemChecked(0) == true)
             {
                 Manager.BlueprintType = "Tool";

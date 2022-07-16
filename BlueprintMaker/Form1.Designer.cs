@@ -78,6 +78,10 @@ namespace BlueprintMaker
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.label24 = new System.Windows.Forms.Label();
+            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -97,6 +101,8 @@ namespace BlueprintMaker
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -178,7 +184,7 @@ namespace BlueprintMaker
             this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown2.Location = new System.Drawing.Point(12, 649);
             this.numericUpDown2.Maximum = new decimal(new int[] {
-            6,
+            7,
             0,
             0,
             0});
@@ -674,11 +680,62 @@ namespace BlueprintMaker
             this.numericUpDown19.TabIndex = 46;
             this.numericUpDown19.ValueChanged += new System.EventHandler(this.numericUpDown19_ValueChanged);
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label24.Location = new System.Drawing.Point(1073, 909);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(168, 32);
+            this.label24.TabIndex = 47;
+            this.label24.Text = "Supply_6 ID";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // numericUpDown20
+            // 
+            this.numericUpDown20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown20.Location = new System.Drawing.Point(1069, 944);
+            this.numericUpDown20.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDown20.Name = "numericUpDown20";
+            this.numericUpDown20.Size = new System.Drawing.Size(1019, 34);
+            this.numericUpDown20.TabIndex = 48;
+            this.numericUpDown20.ValueChanged += new System.EventHandler(this.numericUpDown20_ValueChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label25.Location = new System.Drawing.Point(1073, 981);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(239, 32);
+            this.label25.TabIndex = 49;
+            this.label25.Text = "Supply_6 Amount";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // numericUpDown21
+            // 
+            this.numericUpDown21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown21.Location = new System.Drawing.Point(1069, 1016);
+            this.numericUpDown21.Name = "numericUpDown21";
+            this.numericUpDown21.Size = new System.Drawing.Size(1019, 34);
+            this.numericUpDown21.TabIndex = 50;
+            this.numericUpDown21.ValueChanged += new System.EventHandler(this.numericUpDown21_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2100, 1729);
+            this.Controls.Add(this.numericUpDown21);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.numericUpDown20);
+            this.Controls.Add(this.label24);
             this.Controls.Add(this.numericUpDown19);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.numericUpDown18);
@@ -749,6 +806,8 @@ namespace BlueprintMaker
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -804,6 +863,10 @@ namespace BlueprintMaker
         private System.Windows.Forms.NumericUpDown numericUpDown18;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.NumericUpDown numericUpDown19;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.NumericUpDown numericUpDown20;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.NumericUpDown numericUpDown21;
     }
 }
 

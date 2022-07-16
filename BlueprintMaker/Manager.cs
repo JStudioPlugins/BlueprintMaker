@@ -12,8 +12,8 @@ namespace BlueprintMaker
         public static string ItemName { get; set; }
         public static string BlueprintType { get; set; }
         public static ushort Supplies { get; set; }
-        public static ushort[] SupplyID = new ushort[] { 0, 0, 0, 0, 0, 0 };
-        public static ushort[] SupplyAmount = new ushort[] { 0, 0, 0, 0, 0, 0 };
+        public static ushort[] SupplyID = new ushort[] { 0, 0, 0, 0, 0, 0, 0 };
+        public static ushort[] SupplyAmount = new ushort[] { 0, 0, 0, 0, 0, 0, 0 };
         public static ushort ToolID { get; set; }
         public static ushort ProductID { get; set; }
         public static ushort ProductAmount { get; set; }
