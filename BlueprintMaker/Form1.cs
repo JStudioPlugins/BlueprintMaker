@@ -94,7 +94,7 @@ namespace BlueprintMaker
 
         private void numericUpDown4_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply0Amount = (ushort)numericUpDown4.Value;
+            Manager.SupplyAmount[0] = (ushort)numericUpDown4.Value;
         }
 
         private void numericUpDown5_ValueChanged(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace BlueprintMaker
 
         private void numericUpDown6_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply1Amount = (ushort)numericUpDown6.Value;
+            Manager.SupplyAmount[1] = (ushort)numericUpDown6.Value;
         }
 
         private void numericUpDown7_ValueChanged(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace BlueprintMaker
 
         private void numericUpDown8_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply2Amount = (ushort)numericUpDown8.Value;
+            Manager.SupplyAmount[2] = (ushort)numericUpDown8.Value;
         }
 
         private void numericUpDown9_ValueChanged(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace BlueprintMaker
 
         private void numericUpDown10_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply3Amount = (ushort)numericUpDown10.Value;
+            Manager.SupplyAmount[3] = (ushort)numericUpDown10.Value;
         }
 
         private void numericUpDown11_ValueChanged(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace BlueprintMaker
 
         private void numericUpDown12_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply4Amount = (ushort)numericUpDown12.Value;
+            Manager.SupplyAmount[4] = (ushort)numericUpDown12.Value;
         }
 
         private void numericUpDown13_ValueChanged(object sender, EventArgs e)
@@ -229,7 +229,7 @@ namespace BlueprintMaker
 
         private void numericUpDown19_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply5Amount = (ushort)numericUpDown19.Value;
+            Manager.SupplyAmount[5] = (ushort)numericUpDown19.Value;
         }
 
         private void CopyValues()
@@ -277,17 +277,17 @@ namespace BlueprintMaker
             }
             Manager.Supplies = (ushort)numericUpDown2.Value;
             Manager.SupplyID[0] = (ushort)numericUpDown3.Value;
-            Manager.Supply0Amount = (ushort)numericUpDown4.Value;
+            Manager.SupplyAmount[0] = (ushort)numericUpDown4.Value;
             Manager.SupplyID[1] = (ushort)numericUpDown5.Value;
-            Manager.Supply1Amount = (ushort)numericUpDown6.Value;
+            Manager.SupplyAmount[1] = (ushort)numericUpDown6.Value;
             Manager.SupplyID[2] = (ushort)numericUpDown7.Value;
-            Manager.Supply2Amount = (ushort)numericUpDown8.Value;
+            Manager.SupplyAmount[2] = (ushort)numericUpDown8.Value;
             Manager.SupplyID[3] = (ushort)numericUpDown9.Value;
-            Manager.Supply3Amount = (ushort)numericUpDown10.Value;
+            Manager.SupplyAmount[3] = (ushort)numericUpDown10.Value;
             Manager.SupplyID[4] = (ushort)numericUpDown11.Value;
-            Manager.Supply4Amount = (ushort)numericUpDown12.Value;
+            Manager.SupplyAmount[4] = (ushort)numericUpDown12.Value;
             Manager.SupplyID[5] = (ushort)numericUpDown18.Value;
-            Manager.Supply5Amount = (ushort)numericUpDown19.Value;
+            Manager.SupplyAmount[5] = (ushort)numericUpDown19.Value;
             Manager.ToolID = (ushort)numericUpDown13.Value;
             Manager.ProductID = (ushort)numericUpDown14.Value;
             Manager.ProductAmount = (ushort)numericUpDown15.Value;
