@@ -41,8 +41,11 @@ namespace BlueprintMaker
             int x = 0;
             foreach (ushort id in SupplyID)
             {
-                strings.Add($"Blueprint_0_Supply_{x}_ID {id}");
-                strings.Add($"Blueprint_0_Supply_{x}_Amount {SupplyAmount[x]}");
+                if (id != 0)
+                {
+                    strings.Add($"Blueprint_0_Supply_{x}_ID {id}");
+                    strings.Add($"Blueprint_0_Supply_{x}_Amount {SupplyAmount[x]}");
+                }
                 x++;
             }
             if (ToolID != 0)

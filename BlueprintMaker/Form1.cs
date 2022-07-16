@@ -331,15 +331,19 @@ namespace BlueprintMaker
             {
                 Manager.Skill = "Craft";
             }
-            if (checkedListBox3.GetItemChecked(1) == true)
+            else if (checkedListBox3.GetItemChecked(1) == true)
             {
                 Manager.Skill = "Cook";
             }
-            if (checkedListBox3.GetItemChecked(2) == true)
+            else if (checkedListBox3.GetItemChecked(2) == true)
             {
                 Manager.Skill = "Repair";
             }
-            if (checkedListBox3.GetItemChecked(3) == true)
+            else if (checkedListBox3.GetItemChecked(3) == true)
+            {
+                Manager.Skill = "None";
+            }
+            else
             {
                 Manager.Skill = "None";
             }
