@@ -63,13 +63,13 @@ namespace BlueprintMaker
             strings.Add($"");
             strings.Add($"Master_Bundle_Override core.masterbundle");
             strings.Add($"Bundle_Override_Path /Items/Filters/Filter");
-                
 
-            File.WriteAllLines($"{ItemName}.dat", strings.ToArray());
+            Directory.CreateDirectory(ItemName);
+            File.WriteAllLines($"{ItemName}\\{ItemName}.dat", strings.ToArray());
             List<string> english = new List<string>();
             english.Add($"Name {ItemName}");
             english.Add($"Description Item for a blueprint that gives {ProductID}.");
-            File.WriteAllLines($"English.dat", english.ToArray());
+            File.WriteAllLines($"{ItemName}\\English.dat", english.ToArray());
         }
     }
 }
