@@ -89,7 +89,7 @@ namespace BlueprintMaker
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply0ID = (ushort)numericUpDown3.Value;
+            Manager.SupplyID[0] = (ushort)numericUpDown3.Value;
         }
 
         private void numericUpDown4_ValueChanged(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace BlueprintMaker
 
         private void numericUpDown5_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply1ID = (ushort)numericUpDown5.Value;
+            Manager.SupplyID[1] = (ushort)numericUpDown5.Value;
         }
 
         private void numericUpDown6_ValueChanged(object sender, EventArgs e)
@@ -109,7 +109,7 @@ namespace BlueprintMaker
 
         private void numericUpDown7_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply2ID = (ushort)numericUpDown7.Value;
+            Manager.SupplyID[2] = (ushort)numericUpDown7.Value;
         }
 
         private void numericUpDown8_ValueChanged(object sender, EventArgs e)
@@ -119,7 +119,7 @@ namespace BlueprintMaker
 
         private void numericUpDown9_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply3ID = (ushort)numericUpDown9.Value;
+            Manager.SupplyID[3] = (ushort)numericUpDown9.Value;
         }
 
         private void numericUpDown10_ValueChanged(object sender, EventArgs e)
@@ -129,7 +129,7 @@ namespace BlueprintMaker
 
         private void numericUpDown11_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply4ID = (ushort)numericUpDown11.Value;
+            Manager.SupplyID[4] = (ushort)numericUpDown11.Value;
         }
 
         private void numericUpDown12_ValueChanged(object sender, EventArgs e)
@@ -224,7 +224,7 @@ namespace BlueprintMaker
 
         private void numericUpDown18_ValueChanged(object sender, EventArgs e)
         {
-            Manager.Supply5ID = (ushort)numericUpDown18.Value;
+            Manager.SupplyID[5] = (ushort)numericUpDown18.Value;
         }
 
         private void numericUpDown19_ValueChanged(object sender, EventArgs e)
@@ -276,17 +276,17 @@ namespace BlueprintMaker
                 Manager.BlueprintType = "Utilities";
             }
             Manager.Supplies = (ushort)numericUpDown2.Value;
-            Manager.Supply0ID = (ushort)numericUpDown3.Value;
+            Manager.SupplyID[0] = (ushort)numericUpDown3.Value;
             Manager.Supply0Amount = (ushort)numericUpDown4.Value;
-            Manager.Supply1ID = (ushort)numericUpDown5.Value;
+            Manager.SupplyID[1] = (ushort)numericUpDown5.Value;
             Manager.Supply1Amount = (ushort)numericUpDown6.Value;
-            Manager.Supply2ID = (ushort)numericUpDown7.Value;
+            Manager.SupplyID[2] = (ushort)numericUpDown7.Value;
             Manager.Supply2Amount = (ushort)numericUpDown8.Value;
-            Manager.Supply3ID = (ushort)numericUpDown9.Value;
+            Manager.SupplyID[3] = (ushort)numericUpDown9.Value;
             Manager.Supply3Amount = (ushort)numericUpDown10.Value;
-            Manager.Supply4ID = (ushort)numericUpDown11.Value;
+            Manager.SupplyID[4] = (ushort)numericUpDown11.Value;
             Manager.Supply4Amount = (ushort)numericUpDown12.Value;
-            Manager.Supply5ID = (ushort)numericUpDown18.Value;
+            Manager.SupplyID[5] = (ushort)numericUpDown18.Value;
             Manager.Supply5Amount = (ushort)numericUpDown19.Value;
             Manager.ToolID = (ushort)numericUpDown13.Value;
             Manager.ProductID = (ushort)numericUpDown14.Value;

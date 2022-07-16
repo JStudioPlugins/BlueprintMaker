@@ -12,17 +12,12 @@ namespace BlueprintMaker
         public static string ItemName { get; set; }
         public static string BlueprintType { get; set; }
         public static ushort Supplies { get; set; }
-        public static ushort Supply0ID { get; set; }
+        public static ushort[] SupplyID = new ushort[] { 0, 0, 0, 0, 0, 0 };
         public static ushort Supply0Amount { get; set; }
-        public static ushort Supply1ID { get; set; }
         public static ushort Supply1Amount { get; set; }
-        public static ushort Supply2ID { get; set; }
         public static ushort Supply2Amount { get; set; }
-        public static ushort Supply3ID { get; set; }
         public static ushort Supply3Amount { get; set; }
-        public static ushort Supply4ID { get; set; }
         public static ushort Supply4Amount { get; set; }
-        public static ushort Supply5ID { get; set; }
         public static ushort Supply5Amount { get; set; }
         public static ushort ToolID { get; set; }
         public static ushort ProductID { get; set; }
@@ -48,34 +43,34 @@ namespace BlueprintMaker
             strings.Add($"Blueprints 1");
             strings.Add($"Blueprint_0_Type {BlueprintType}");
             strings.Add($"Blueprint_0_Supplies {Supplies}");
-            if (Supply0ID != 0)
+            if (SupplyID[0] != 0)
             {
-                strings.Add($"Blueprint_0_Supply_0_ID {Supply0ID}");
+                strings.Add($"Blueprint_0_Supply_0_ID {SupplyID[0]}");
                 strings.Add($"Blueprint_0_Supply_0_Amount {Supply0Amount}");
             }
-            if (Supply1ID != 0)
+            if (SupplyID[1] != 0)
             {
-                strings.Add($"Blueprint_0_Supply_1_ID {Supply1ID}");
+                strings.Add($"Blueprint_0_Supply_1_ID {SupplyID[1]}");
                 strings.Add($"Blueprint_0_Supply_1_Amount {Supply1Amount}");
             }
-            if (Supply2ID != 0)
+            if (SupplyID[2] != 0)
             {
-                strings.Add($"Blueprint_0_Supply_2_ID {Supply2ID}");
+                strings.Add($"Blueprint_0_Supply_2_ID {SupplyID[2]}");
                 strings.Add($"Blueprint_0_Supply_2_Amount {Supply2Amount}");
             }
-            if (Supply3ID != 0)
+            if (SupplyID[3] != 0)
             {
-                strings.Add($"Blueprint_0_Supply_3_ID {Supply3ID}");
+                strings.Add($"Blueprint_0_Supply_3_ID {SupplyID[3]}");
                 strings.Add($"Blueprint_0_Supply_3_Amount {Supply3Amount}");
             }
-            if (Supply4ID != 0)
+            if (SupplyID[4] != 0)
             {
-                strings.Add($"Blueprint_0_Supply_4_ID {Supply4ID}");
+                strings.Add($"Blueprint_0_Supply_4_ID {SupplyID[4]}");
                 strings.Add($"Blueprint_0_Supply_4_Amount {Supply4Amount}");
             }
-            if (Supply5ID != 0)
+            if (SupplyID[5] != 0)
             {
-                strings.Add($"Blueprint_0_Supply_5_ID {Supply5ID}");
+                strings.Add($"Blueprint_0_Supply_5_ID {SupplyID[5]}");
                 strings.Add($"Blueprint_0_Supply_5_Amount {Supply5Amount}");
             }
             if (ToolID != 0)
