@@ -300,6 +300,8 @@ namespace BlueprintMaker
             Manager.SupplyAmount[4] = (ushort)numericUpDown12.Value;
             Manager.SupplyID[5] = (ushort)numericUpDown18.Value;
             Manager.SupplyAmount[5] = (ushort)numericUpDown19.Value;
+            Manager.SupplyID[6] = (ushort)numericUpDown20.Value;
+            Manager.SupplyAmount[6] = (ushort)numericUpDown21.Value;
             Manager.ToolID = (ushort)numericUpDown13.Value;
             Manager.ProductID = (ushort)numericUpDown14.Value;
             Manager.ProductAmount = (ushort)numericUpDown15.Value;
